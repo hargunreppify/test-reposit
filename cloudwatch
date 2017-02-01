@@ -1,0 +1,4 @@
+import boto.ec2.cloudwatch
+c = boto.ec2.cloudwatch.connect_to_region('us-west-1')
+metrics = c.list_metrics()
+print metrics
